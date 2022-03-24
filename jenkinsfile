@@ -1,0 +1,20 @@
+node {
+    stage('构建') { 
+        //
+        echo'build'
+    }
+    stage('测试') {
+        //
+        echo'test'
+    }
+    stage('部署') {
+        //
+        echo'eploy'
+    }
+    stage('验收') {
+        //
+        echo'give'
+        emailext attachmentsPattern: '*.html', body: 'testbody', subject: 'test', to: 'wjy6@meitu.com'
+    }
+}
+
