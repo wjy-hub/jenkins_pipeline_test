@@ -14,7 +14,6 @@ node {
     stage('验收') {
         //
         echo'give'
-        emailext attachmentsPattern: '*.html', body: 'testbody', subject: 'test', to: 'wjy6@meitu.com'
     }
 }
 
